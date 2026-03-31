@@ -6,12 +6,15 @@ Course::Course()
   course_number = "";
   course_name = "";
   course_schedule = "";
-  course_price = 0.0;
+  course_cost = 0.0;
 }
 
-Course::Course(const string& number,const string& name, const string& schedule, const double& price);
+Course::Course(const string& number,const string& name, const string& schedule, const double& cost);
 {
-  course_number = number
+  course_number = number;
+  course_name = name;
+  course_schedule = schedule;
+  course_cost = cost;
 }
 
 string Course::getcourse_number() const
@@ -21,15 +24,20 @@ string Course::getcourse_number() const
 
 string Course::getcourse_name() const
 {
-  return course_number;
+  return course_name;
 }
 
-string Course::getschedule() const
+string Course::getcourse_schedule() const
 {
-  return course_number;
+  return course_schedule;
 }
 
-string Course::getprice() const
+string Course::getcost() const
 {
-  return course_number;
+  return course_cost;
+}
+
+void Course::printCourse() const
+{
+  cout << course_number << " " << course_name << " (" << course_schedule << ") $" << price << endl;
 }
