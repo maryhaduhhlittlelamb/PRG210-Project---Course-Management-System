@@ -10,11 +10,11 @@ private:
     string course_number;
     string course_name;
     string course_schedule;
-    double course_price;
+    double course_cost;
 
 public
     Course();
-    Course(const string& course_number, const string& course_name, const string& couse_schedule, const double course_price);
+    Course(const string& number, const string& name, const string& schedule, const double cost);
 
     string getcourse_number() const;
     string getcourse_name() const;
