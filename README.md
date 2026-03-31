@@ -4,16 +4,22 @@
 ## 1. Course:
 
 **course.h:**
-- class definition
-- private members
-- public constructor
-- public getters
-- print function
+- Class Definition
+  - class Course
+- Private Members
+  - course number
+  - course name
+  - schedule
+  - price
+- Public Constructor
+- Public Getters
+  - use get
+- Print Function
 
-**course.pp:**
-- constructor implementation
-- getter implementations
-- print function implementation
+**course.cpp:**
+- Constructor Implementation
+- Getter Implementations
+- Print Function Implementation
 
 ## DAY 2
 ## 2. Department:
