@@ -32,12 +32,12 @@ string Course::getcourse_schedule() const
   return course_schedule;
 }
 
-string Course::getcost() const
+double Course::getcost() const
 {
   return course_cost;
 }
 
 void Course::printCourse() const
 {
-  cout << course_number << " " << course_name << " (" << course_schedule << ") $" << price << endl;
+  cout << course_number << " " << course_name << " (" << course_schedule << ") $" << course_cost << endl;
 }
