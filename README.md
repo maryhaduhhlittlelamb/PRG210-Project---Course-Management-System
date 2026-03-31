@@ -11,7 +11,7 @@
   - schedule
   - price
 - Public Constructor
-  - add course so it wont change anything inside
+  - add const so it wont change anything inside
 - Public Getters
   - use get
 - Print Function
