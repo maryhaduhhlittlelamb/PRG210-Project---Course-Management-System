@@ -9,8 +9,9 @@ Course::Course()
   course_price = 0.0;
 }
 
-Course::Course(const string& course_number,const string& course_name, const string& course_schedule, const double& course_price);
+Course::Course(const string& number,const string& name, const string& schedule, const double& price);
 {
+  course_number = number
 }
 
 string Course::getcourse_number() const
