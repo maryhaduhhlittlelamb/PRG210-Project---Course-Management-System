@@ -9,7 +9,7 @@ Course::Course()
   course_cost = 0.0;
 }
 
-Course::Course(const string& number,const string& name, const string& schedule, const double& cost);
+Course::Course(const string& number,const string& name, const string& schedule, const double cost);
 {
   course_number = number;
   course_name = name;
@@ -32,7 +32,7 @@ string Course::getcourse_schedule() const
   return course_schedule;
 }
 
-double Course::getcost() const
+double Course::getcourse_cost() const
 {
   return course_cost;
 }
