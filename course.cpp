@@ -9,7 +9,7 @@ Course::Course()
   course_cost = 0.0;
 }
 
-Course::Course(const string& number,const string& name, const string& schedule, const double cost);
+Course::Course(const string& number,const string& name, const string& schedule, const double cost)
 {
   course_number = number;
   course_name = name;
