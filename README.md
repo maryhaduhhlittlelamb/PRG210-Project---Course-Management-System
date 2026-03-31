@@ -1,6 +1,6 @@
 ## PRG210-PROJECT COURSE MANANGEMENT SYSTEM NOTES & PLANNING
 
-###1. Course:**
+## 1. Course:
 **course.h:**
 - class definition
 - private members
@@ -12,10 +12,10 @@
 - getter implementations
 - print function implementation
 
-**-2. Department:**
+## 2. Department:
 
-**-3.Cart:**
+## 3.Cart:
 
-**-4. Interfaces:**
+## 4. Interfaces:
 
-**5. Main:****
+## 5. Main:
