@@ -4,12 +4,14 @@
 #include <string>
 using namespace std;
 
-class Course {
+class Course 
+{
 private:
     string course_number;
     string course_name;
     string schedule;
     double price;
+
 public
     Course();
     Course(const string& course_number, const string& course_name, const string& schedule, const double price);
