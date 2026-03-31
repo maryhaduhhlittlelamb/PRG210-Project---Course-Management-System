@@ -12,7 +12,7 @@ private:
     string course_schedule;
     double course_cost;
 
-public
+public:
     Course();
     Course(const string& number, const string& name, const string& schedule, const double cost);
 
