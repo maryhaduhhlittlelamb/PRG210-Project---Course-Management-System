@@ -19,7 +19,7 @@ public
     string getcourse_number() const;
     string getcourse_name() const;
     string getcourse_schedule() const;
-    double getcourse_price() const;
+    double getcourse_cost() const;
 
     void printCourse() const;
 };
