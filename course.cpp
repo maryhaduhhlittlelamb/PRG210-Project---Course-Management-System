@@ -19,12 +19,12 @@ string Course::getcourse_name() const
   return course_number;
 }
 
-string Course::getcourse_() const
+string Course::getschedule() const
 {
   return course_number;
 }
 
-string Course::getcourse_number() const
+string Course::getprice() const
 {
   return course_number;
 }
