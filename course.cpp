@@ -3,9 +3,13 @@
 
 Course::Course()
 {
+  course_number = "";
+  course_name = "";
+  course_schedule = "";
+  course_price = 0.0;
 }
 
-Course::Course(const string&);
+Course::Course(const string& course_number,const string& course_name, const string& course_schedule, const double& course_price);
 {
 }
 
