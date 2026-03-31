@@ -15,6 +15,7 @@
 - Public Getters
   - use get
 - Print Function
+  - add void
 
 **course.cpp:**
 - Constructor Implementation
