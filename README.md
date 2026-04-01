@@ -48,6 +48,24 @@
   - getdepartment_name() - returns the department name
     
 **department.cpp**
+- Constructor Implementation
+  - default sets name to empty
+  - course_count = 0
+  - course_list = nullptr
+  - parameterized sets the name and initializes course_count = 0
+- Destructor
+  - deleted the dynamic array using delete[]
+- addCourse
+  - create a new array with size + 1
+  - copies old courses into new array
+  - add the new course at the end
+  - delete old array
+  - update course_count
+- printCourse
+  - loops through the array
+  - calls printCourse() for each Course object
+- getdepartment_name()
+  - returns the department name
 
 ## 3. Cart:
 
