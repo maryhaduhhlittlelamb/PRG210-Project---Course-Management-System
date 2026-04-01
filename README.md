@@ -9,7 +9,7 @@
   - course number
   - course name
   - schedule
-  - price
+  - cost
 - Public Constructor
   - add const so it wont change anything inside
 - Public Getters
