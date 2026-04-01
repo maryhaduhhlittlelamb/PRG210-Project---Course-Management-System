@@ -30,6 +30,25 @@
 
 ## 2. Department:
 
+**department.h:**
+- Class Definition
+  - class Department
+- Private Members
+  - department name
+  - dynamic array of Course objects
+  - course count (how many of the courses stored)
+- Public Constructor
+  - default constructor
+  - constructor that sets the department name
+- Destructor
+  - deletes the dynamic array to avoid memory leaks
+- Public Functions
+  - addCourse() - adds a new course to the department
+  - pirntCourse() - prints all courses
+  - getdepartment_name() - returns the department name
+    
+**department.cpp**
+
 ## 3. Cart:
 
 ## 4. Interfaces:
