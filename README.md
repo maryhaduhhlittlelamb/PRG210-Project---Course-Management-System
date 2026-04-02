@@ -80,16 +80,35 @@
 - Destructor
   - delete the dynamic array
 - Public Functions
-  - addCourse() ->
+  - addCourse() - adds a course to the cart
+  - removeCourse() - removes a course
+  - printCart() - prints all courses in the cart
+  - getTotal() - adds up the prices of all courses
 
 **cart.cpp**
 - Constructor Implementation
+  - set count to 0
+  - set pointer to nullptr
 - Destructor
   - delete the dynamic array
 - addCourse()
+  - same idea as Department
+  - create new array with +1 size
+  - copy old courses
+  - add the new one
+  - delete old array
+  - update count
 - removeCourse()
+  - find the course by number
+  - shift everythging left
+  - shrink the array
 - printCart()
+  - loop through the array
+  - call printCourses()
 - getTotal()
+  - loop through all courses
+  - add up the cost
+  - return the total
 
 ## 4. Interfaces:
 
