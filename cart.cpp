@@ -27,7 +27,7 @@ void Cart::addCourse(const Course& c)
   cart_count++;
 }
 
-void Cart::RemoveCourse(const string& courseNumber)
+void Cart::RemoveCourse(const string& course_number)
 {
   if (cart_count == 0)
     return;
