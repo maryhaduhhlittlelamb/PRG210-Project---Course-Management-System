@@ -69,6 +69,28 @@
 
 ## 3. Cart:
 
+**cart.h**
+- Class Definition
+  - class Cart
+- Private Members
+  - dynamic array of Course objects
+  - course count
+- Public Constructor
+  - default constructor
+- Destructor
+  - delete the dynamic array
+- Public Functions
+  - addCourse() ->
+
+**cart.cpp**
+- Constructor Implementation
+- Destructor
+  - delete the dynamic array
+- addCourse()
+- removeCourse()
+- printCart()
+- getTotal()
+
 ## 4. Interfaces:
 
 ## 5. Main:
