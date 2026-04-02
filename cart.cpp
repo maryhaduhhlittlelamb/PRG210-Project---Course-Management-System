@@ -36,7 +36,7 @@ void Cart::RemoveCourse(const string& courseNumber)
 
   for (int i = 0; i < cart_count; i++)
     {
-      if (cart_list[i].getcourse_number()
+      if (cart_list[i].getcourse_number() == course_number
       {
         index = i;
         break;
