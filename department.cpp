@@ -21,7 +21,7 @@ Department::~Department()
   delete[] course_list;
 }
 
-void
+void Department::addCourse(const Course& c)
 { 
   Course* temp = new Course[course_count + 1];
   
@@ -36,7 +36,7 @@ void
 
 void Department::printCourses() const
 {
-  for  (int i = 0; i < course_count; i++)
+  for (int i = 0; i < course_count; i++)
     course_list[i].printCourse();
 }
 
