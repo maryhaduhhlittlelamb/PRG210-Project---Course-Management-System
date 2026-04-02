@@ -15,7 +15,7 @@ public:
     ~Cart();
 
     void addCourse(const Course& c);
-    void removeCourse(const string& courseNumber);
+    void removeCourse(const string& course_number);
     void printCart() const;
     double getTotal() const;
 };
