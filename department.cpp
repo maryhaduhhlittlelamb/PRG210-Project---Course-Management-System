@@ -9,17 +9,35 @@ Department::Department()
   course_count = 0;
 }
 
+Department::Department(const string& name)
+{
+  department_name = name;
+  course_list = nullptr;
+  course_count = 0;
+}
+
 Department::~Department()
 {
   delete[] course_list;
 }
 
 void
-{
+{ 
+  Course* temp = new Course[course_count + 1];
+  
+  for  (int i = 0; i < course_count; i++)
+    temp[i] = course_list[i];
+  
+  temp[course_count] = c;
+  delete[] course_list;
+  course_list = temp;
+  course_count++;
 }
 
-void
+void Department::printCourses() const
 {
+  for  (int i = 0; i < course_count; i++)
+    course_list[i].printCourse();
 }
 
 string Department::getdepartment_name() const
