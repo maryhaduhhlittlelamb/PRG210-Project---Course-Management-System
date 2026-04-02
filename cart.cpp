@@ -27,7 +27,7 @@ void Cart::addCourse(const Course& c)
   cart_count++;
 }
 
-void Cart::RemoveCourse(const string& course_number)
+void Cart::removeCourse(const string& course_number)
 {
   if (cart_count == 0)
     return;
@@ -36,7 +36,7 @@ void Cart::RemoveCourse(const string& course_number)
 
   for (int i = 0; i < cart_count; i++)
     {
-      if (cart_list[i].getcourse_number() == course_number
+      if (cart_list[i].getcourse_number() == course_number)
       {
         index = i;
         break;
