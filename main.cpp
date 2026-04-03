@@ -16,14 +16,15 @@ int main()
       Department("School of Software Design & Data Science (SDDS)"),
       Department("School of Electronics & Computer Engineering Technology (ECET)")
   };
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
 
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
+  deptlist[0].addCourse(Course("ITAS101", "Networking Fundamentals", "MWF 8-10", 500));
+  deptlist[0].addCourse(Course("ITAS201", "IT Security Basics", "TTh 2-4", 600));
 
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
-  deptlist[].addCourse(Course("number", "name", "schedule", cost));
+  deptlist[1].addCourse(Course("SDDS101", "Intro to Programming", "MWF 11-1", 520));
+  deptlist[1].addCourse(Course("SDDS201", "Object Oriented Programming", "TTh 11-1", 620));
+
+  deptlist[2].addCourse(Course("ECET101", "Digital Systems", "MWF 2-4", 550));
+  deptlist[2].addCourse(Course("ECET201", "Software Engineering", "TTh 8-10", 650));
 
   Cart cart;
   int choice = 0;
