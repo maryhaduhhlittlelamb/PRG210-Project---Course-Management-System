@@ -28,7 +28,15 @@ int main()
 
   Cart cart;
   int choice = 0;
+  
+  while (choice != 3)
+  {
+    cout <<"\n🗂️ --- MAIN MENU ---- 🗂️\n";
+    cout << admin
+    cout student
+    cout exit
 
+  }
   return 0;
 }
 
