@@ -125,4 +125,14 @@
 ## 4. Main:
 
 **main.cpp**
+- Create Department(s)
+- Create a Cart Object
+- Main Menu
+  - Admin
+  - Student
+  - Exit
+- Admin Menu
+- Student Menu
+- Admin Interface
+- Student Interface
 
