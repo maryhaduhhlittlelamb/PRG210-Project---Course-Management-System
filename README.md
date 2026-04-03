@@ -132,7 +132,24 @@
   - Student
   - Exit
 - Admin Menu
+  - add course
+  - print courses
+  - back
 - Student Menu
+  - view courses
+  - add to cart
+  - remove from cart
+  - view cart
+  - checkout
+  - back
 - Admin Interface
+  - Add a course to a department.
+  - Print all courses in a department.
+  - Go back to the main menu.
 - Student Interface
-
+  - View courses
+  - Add course to cart
+  - Remove course from cart
+  - View cart
+  - Checkout (show total)
+  - Go back
