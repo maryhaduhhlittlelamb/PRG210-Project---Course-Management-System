@@ -20,6 +20,9 @@ public:
     void printCourses() const;
 
     string getdepartment_name() const;
+
+    int getcourse_count() const;
+    Course getCourse(int index) const;
 };
 
 #endif
