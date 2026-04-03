@@ -53,4 +53,4 @@ int Department::getcourse_count() const
 Course Department::getCourse(int index) const
 {
   return course_list[index];
-{
+}
