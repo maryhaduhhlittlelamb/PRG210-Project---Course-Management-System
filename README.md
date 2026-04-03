@@ -126,6 +126,7 @@
 
 **main.cpp**
 - Create Department(s)
+  - 
 - Create a Cart Object
 - Main Menu
   - Admin
