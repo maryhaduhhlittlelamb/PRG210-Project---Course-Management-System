@@ -126,31 +126,48 @@
 
 **main.cpp**
 - Create Department(s)
-  - 
+  - School of Information Technology & Security
+  - School of Software Design & Data Science
+  - School of Electronics & Software Engineering
 - Create a Cart Object
 - Main Menu
   - Admin
   - Student
   - Exit
 - Admin Menu
+  - pick a department
   - add course
   - print courses
   - back
+- Admin Actions
+  - enter course number
+  - enter course name
+  - enter schedule
+  - enter cost
+  - add to the selected department
 - Student Menu
+  - pick a department
   - view courses
   - add to cart
   - remove from cart
   - view cart
   - checkout
   - back
+- Student Actions
+  - choose a department
+  - see all courses in that department
+  - add course by course number
+  - removes course by course number
+  - view cart
+  - show total cost
 - Admin Interface
-  - Add a course to a department.
-  - Print all courses in a department.
-  - Go back to the main menu.
+  - add a course to a department
+  - print all courses in a department
+  - go back to the main menu
 - Student Interface
-  - View courses
-  - Add course to cart
-  - Remove course from cart
-  - View cart
-  - Checkout (show total)
-  - Go back
+  - view courses
+  - add course to cart
+  - remove course from cart
+  - view cart
+  - checkout (show total)
+  - go back
