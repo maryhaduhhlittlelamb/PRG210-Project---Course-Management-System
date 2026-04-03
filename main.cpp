@@ -25,15 +25,24 @@ int main()
   deptlist[].addCourse(Course("number", "name", "schedule", cost));
   deptlist[].addCourse(Course("number", "name", "schedule", cost));
 
+  Cart cart;
+  int choice = 0;
+
   return 0;
 }
 
-void admin_menu()
+void admin_menu(Department deptList[], int deptCount)
 {
-  
+  int choice = 0;
+  while (choice != 3)
+  {
+  }
 }
 
-void student_menu()
+void student_menu(Department deptList[], int deptCount, Cart& cart)
 {
-  
+  int choice = 0;
+  while (choice != 6)
+  {
+  }
 }
