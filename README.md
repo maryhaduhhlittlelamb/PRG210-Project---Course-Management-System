@@ -1,12 +1,15 @@
 ## PRG210-PROJECT COURSE MANANGEMENT SYSTEM NOTES & PLANNING
 
 **Files Needed:**
-- course.h
-- course.cpp
-- department.h
-- department.cpp
-- cart.h
-- cart.cpp
+- Course
+  - course.h
+  - course.cpp
+- Department
+  - department.h
+  - department.cpp
+- Cart
+  - cart.h
+  - cart.cpp
 - main.cpp
 
 ## 1. Course:
