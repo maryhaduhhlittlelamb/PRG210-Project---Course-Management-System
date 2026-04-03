@@ -44,3 +44,13 @@ string Department::getdepartment_name() const
 {
   return department_name;
 }
+
+int Departent::getcourse_count() const
+{
+  return course_count;
+}
+
+Course Department::getCourse(int index) const
+{
+  return course_list[index];
+{
