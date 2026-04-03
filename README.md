@@ -1,5 +1,14 @@
 ## PRG210-PROJECT COURSE MANANGEMENT SYSTEM NOTES & PLANNING
 
+**Files Needed:**
+- course.h
+- course.cpp
+- department.h
+- department.cpp
+- cart.h
+- cart.cpp
+- main.cpp
+
 ## 1. Course:
 
 **course.h:**
@@ -110,6 +119,7 @@
   - add up the cost
   - return the total
 
-## 4. Interfaces:
+## 4. Main:
 
-## 5. Main:
+**main.cpp**
+
