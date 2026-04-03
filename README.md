@@ -171,3 +171,5 @@
   - view cart
   - checkout (show total)
   - go back
+
+**(All files tested on VSCode for error checks and accuracy.)**
