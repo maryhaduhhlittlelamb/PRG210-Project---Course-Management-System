@@ -2,7 +2,7 @@
 #include <string>
 #include "course.h"
 #include "department.h"
-#icnlude "cart.h"
+#include "cart.h"
 using namespace std;
 
 void admin_menu(Department deptList[], int deptCount);
@@ -32,19 +32,54 @@ int main()
   while (choice != 3)
   {
     cout <<"\n🗂️ --- MAIN MENU ---- 🗂️\n";
-    cout << admin
-    cout student
-    cout exit
+    cout << "1. Admin\n";
+    cout << "2. Student\n";
+    cout << "3. Exit\n";
+    cout << "Enter Your Choice: ";
+    cin >> choice;
 
+    if (choice == 1)
+    {
+      admin_menu(deptList, deptCount);
+    }
+    else if (choice == 2)
+    {
+      student_menu(deptList, deptCount, cart);
+    }
+    else if (choice == 3)
+    {
+      cout << "Exiting Program...\n";
+    }
   }
+  
   return 0;
 }
 
 void admin_menu(Department deptList[], int deptCount)
 {
   int choice = 0;
+  
   while (choice != 3)
   {
+    cout <<"\n👩🏻‍🏫 --- ADMIN MENU ---- 👩🏻‍🏫\n";
+    cout << "1. Add Course\n";
+    cout << "2. Print Courses\n";
+    cout << "3. Back\n";
+    cout << "Enter Your Choice: ";
+    cin >> choice; 
+
+    if (choice == 1)
+    {
+      cout << "\nSelect A Department:\n";
+      for (int i = 0; i < deptCount; i++)
+        cout << i + 1 << deptList[i].getdepartment_name() << endl;
+
+      int d;
+      cout << "Enter Department Number: "
+      cin >> d;
+
+      if 
+    }
   }
 }
 
