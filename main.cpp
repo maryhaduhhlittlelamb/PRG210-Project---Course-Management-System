@@ -31,7 +31,7 @@ int main()
   
   while (choice != 3)
   {
-    cout <<"\n🗂️ --- MAIN MENU ---- 🗂️\n";
+    cout <<"\n🗂️ ---- MAIN MENU ---- 🗂️\n";
     cout << "1. Admin\n";
     cout << "2. Student\n";
     cout << "3. Exit\n";
@@ -61,8 +61,8 @@ void admin_menu(Department deptList[], int deptCount)
   
   while (choice != 3)
   {
-    cout <<"\n👩🏻‍🏫 --- ADMIN MENU ---- 👩🏻‍🏫\n";
-    cout << "1. Add Course\n";
+    cout <<"\n👩🏻‍🏫 ---- ADMIN MENU ---- 👩🏻‍🏫\n";
+    cout << "1. Add Course \n";
     cout << "2. Print Courses\n";
     cout << "3. Back\n";
     cout << "Enter Your Choice: ";
@@ -138,5 +138,107 @@ void student_menu(Department deptList[], int deptCount, Cart& cart)
   
   while (choice != 6)
   {
+    cout << "\n👩🏻‍🎓 ---- STUDENT MENU ---- 👩🏻‍🎓\n";
+    cout << "1. View Courses\n";
+    cout << "2. Add Course to Cart\n";
+    cout << "3. Remove Course from Cart\n";
+    cout << "4. View Cart\n";
+    cout << "5. Checkout\n";
+    cout << "6. Back\n";
+    cout << "Enter Your Choice: ";
+    cin >> choice;
+
+    if (choice == 1)
+    {
+      cout << "\nSelect a Department:\n";
+      for (int i = 0; i < deptCount; i++)
+        cout << i + 1 << ". " << deptList[i].getdepartment_name() << endl;
+
+      int d;
+      cout << "Enter Department Number: ";
+      cin >> d;
+
+      if (d < 1 || d > deptCount)
+      {
+        cout << "Invalid Department.\n";
+        continue;
+      }
+      
+      deptList[d - 1].printCourses();
+    }
+    
+    else if (choice == 2)
+    {
+      cout << "\nSelect a Department:\n";
+      for (int i = 0; i < deptCount; i++)
+        cout << i + 1 << ". " << deptList[i].getdepartment_name() << endl;
+
+      int d;
+      cout << "Enter Department Number: ";
+      cin >> d;
+
+      if (d < 1 || d > deptCount)
+      {
+        cout << "Invalid Department.\n";
+        continue;
+      }
+
+      string num;
+      cout << "Enter the Course Number to Add: ";
+      cin >> num;
+
+      bool found = false;
+      Course temp;
+
+      for (int i = 0; i < deptList[d - 1].getcourse_count(); i++)
+      {
+        if (deptList[d - 1].getCourse(i).getcourse_number() == num)
+        {
+          temp = deptList[d -1].getCourse(i);
+          found = true;
+          break;
+        }
+      }
+
+      if (found)
+      {
+        cart.addCourse(temp);
+        cout << "Course Added to your Cart.\n";
+      }
+      else
+      {
+        cout << "Course Not Found\n";
+      }
+    }
+
+    else if (choice == 3)
+    {
+      string num;
+      cout << "Enter Course Number to Remove: ";
+      cin >> num;
+
+      cart.removeCourse(num);
+      cout << "Course Removed.\n";
+    }
+
+    else if (choice == 4)
+    {
+      cart.printCart();
+    }
+
+    else if (choice == 5)
+    {
+      cout << "Total Cost: $" << cart.getTotal() << endl;
+    }
+
+    else if (choice == 6)
+    {
+      cout << "Returning to the MAIN MENU...\n";
+    }
+
+    else
+    {
+      cout << "Invalid Choice.\n";
+    }
   }
 }
