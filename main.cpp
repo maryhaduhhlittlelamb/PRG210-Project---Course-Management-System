@@ -48,7 +48,7 @@ int main()
     }
     else if (choice == 3)
     {
-      cout << "Exiting Program...\n";
+      cout << "Exiting the Program...\n";
     }
   }
   
@@ -70,15 +70,64 @@ void admin_menu(Department deptList[], int deptCount)
 
     if (choice == 1)
     {
-      cout << "\nSelect A Department:\n";
+      cout << "\nSelect a Department:\n";
       for (int i = 0; i < deptCount; i++)
-        cout << i + 1 << deptList[i].getdepartment_name() << endl;
+        cout << i + 1 << ". " << deptList[i].getdepartment_name() << endl;
 
       int d;
-      cout << "Enter Department Number: "
+      cout << "Enter Department Number: ";
       cin >> d;
 
-      if 
+      if (d < 1 || d > deptCount)
+      {
+        cout << "Invalid Department.\n";
+        continue;
+      }
+
+      string num, name, schded;
+      double cost;
+
+      cost << "Enter Course Number: ";
+      cin >> num;
+      cout << "Enter Course Name: ";
+      cin.ignore();
+      getline(cin, name);
+      cout << "Enter Schedule: ";
+      getline(cin, sched);
+      cout << "Enter Cost: ";
+      cin >> cost;
+
+      Course c(num, name, sched, cost);
+      deptList[d - 1].addCourse(c);
+
+      cout << "Course Added.\n";
+    }
+
+    else if (choice == 2)
+    {
+      cout << "\nSelect a Department\n";
+      for (int i = 0; i < deptCount; i++)
+        cout << i + 1 << ". " << deptList[i].getdepartment_name() << endl;
+
+      int d;
+      cout << "Enter Department Number: ";
+      cin >> d;
+
+      if (d < 1 || d > deptCount)
+      {
+        cout << "Invalid Department.\n";
+        continue;
+      }
+      deptList[d - 1].printCourses();
+    }
+
+    else if (choice == 3)
+    {
+      cout << "Returning to MAIN MENU...\n";
+    }
+    else
+    {
+      cout << "Invalid Choice.\n";
     }
   }
 }
@@ -86,6 +135,7 @@ void admin_menu(Department deptList[], int deptCount)
 void student_menu(Department deptList[], int deptCount, Cart& cart)
 {
   int choice = 0;
+  
   while (choice != 6)
   {
   }
