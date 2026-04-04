@@ -25,9 +25,7 @@
 - Public Constructor
   - add const so it wont change anything inside
 - Public Getters
-  - use get
 - Print Function
-  - add void
 
 **course.cpp:**
 - Constructor Implementation
