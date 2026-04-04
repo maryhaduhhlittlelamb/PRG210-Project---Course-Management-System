@@ -87,7 +87,7 @@ void admin_menu(Department deptList[], int deptCount)
       string num, name, sched;
       double cost;
 
-      cost << "Enter Course Number: ";
+      cout << "Enter Course Number: ";
       cin >> num;
       cout << "Enter Course Name: ";
       cin.ignore();
