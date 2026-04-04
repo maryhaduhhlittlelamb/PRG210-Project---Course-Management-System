@@ -84,7 +84,7 @@ void admin_menu(Department deptList[], int deptCount)
         continue;
       }
 
-      string num, name, schded;
+      string num, name, sched;
       double cost;
 
       cost << "Enter Course Number: ";
